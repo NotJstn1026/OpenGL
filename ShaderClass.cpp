@@ -1,11 +1,14 @@
 #include "ShaderClass.h"
+#include<string>
 
-std::string GetFileContents(const char* filename)
+std::string GetFileContents(const char* a_filename)
 {
-	std::ifstream inFile(filename, std::ios::binary);
+	// Loads the File by filename
+	std::ifstream inFile(a_filename, std::ios::binary);
 	if (!inFile)
 	{
-		throw std::runtime_error("Your error message");
+		std::string filename = a_filename;
+		throw std::runtime_error("Haven´t found: "+filename);
 	}
 
 	std::string contents;

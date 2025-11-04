@@ -24,9 +24,6 @@
     <ClCompile Include="Viewport.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="IObject.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="EBO.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>

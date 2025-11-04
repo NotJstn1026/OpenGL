@@ -137,7 +137,6 @@
   <ItemGroup>
     <ClCompile Include="EBO.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="IObject.cpp" />
     <ClCompile Include="Programm.cpp" />
     <ClCompile Include="ShaderClass.cpp" />
     <ClCompile Include="VAO.cpp" />

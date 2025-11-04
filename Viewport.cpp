@@ -1,6 +1,5 @@
 #include "Viewport.h"
 
-
 void HandleFrambufferSize(GLFWwindow* a_window, int a_width, int a_height)
 {
 	int xOffset = 0;
@@ -30,14 +29,14 @@ const int Viewport::Initialize(void)
 	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) return 69;
 
 
-	Vertex vertices[6] =
-	{
-		glm::vec3{-0.5f, -0.5f * float(sqrt(3)) / 3, 0.0f},
-		glm::vec3{0.5f, -0.5f * float(sqrt(3)) / 3, 0.0f},
-		glm::vec3{0.0f, 0.5f * float(sqrt(3)) * 2 / 3, 0.0f},
-		glm::vec3{-0.5f / 2, 0.5f * float(sqrt(3)) / 6, 0.0f},
-		glm::vec3{0.5f / 2, 0.5f * float(sqrt(3)) / 6, 0.0f},
-		glm::vec3{0.0f, -0.5f * float(sqrt(3)) / 3, 0.0f},
+	Vertex vertices[] =
+	{						//Postions									//Colors
+		glm::vec3{-0.5f, -0.5f * float(sqrt(3)) / 3, 0.0f},		glm::vec3{1.f, 0.f,  0.0f},
+		glm::vec3{0.5f, -0.5f * float(sqrt(3)) / 3, 0.0f},		glm::vec3{1.f, 0.f,  0.0f},
+		glm::vec3{0.0f, 0.5f * float(sqrt(3)) * 2 / 3, 0.0f},	glm::vec3{0.f, 1.f,  0.f},
+		glm::vec3{-0.5f / 2, 0.5f * float(sqrt(3)) / 6, 0.0f},	glm::vec3{0.f, 1.f, 0.f},
+		glm::vec3{0.5f / 2, 0.5f * float(sqrt(3)) / 6, 0.0f},	glm::vec3{0.f, 0.f, 1.f},
+		glm::vec3{0.0f, -0.5f * float(sqrt(3)) / 3, 0.0f},		glm::vec3{0.f, 0.f, 1.f},
 	};
 
 	GLint indices[9] =
@@ -60,7 +59,8 @@ const int Viewport::Initialize(void)
 
 	m_ebo = new EBO(indices, sizeof(indices));
 
-	m_vao->LinkVBO(*m_vbo, 0);
+	m_vao->LinkAttribute(*m_vbo, 0, 3, GL_FLOAT, sizeof(Vertex), (void*)0);
+	m_vao->LinkAttribute(*m_vbo, 1, 3, GL_FLOAT, sizeof(Vertex), (void*)offsetof(Vertex, color));
 
 	m_vao->Unbind();
 	m_vbo->Unbind();
