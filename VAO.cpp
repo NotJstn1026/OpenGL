@@ -1,6 +1,5 @@
 #include "VAO.h"
 
-// Constructor that generates a VAO ID
 VAO::VAO()
 {
 	glGenVertexArrays(1, &m_ID);
@@ -20,19 +19,19 @@ void VAO::LinkAttribute(VBO &VBO, GLuint layout, GLuint numberOfComponents, GLen
 }
 
 // Binds the VAO
-void VAO::Bind()
+void VAO::Bind() const
 {
 	glBindVertexArray(m_ID);
 }
 
 // Unbinds the VAO
-void VAO::Unbind()
+void VAO::Unbind() const
 {
 	glBindVertexArray(0);
 }
 
 // Deletes the VAO
-void VAO::Delete()
+void VAO::Delete() const
 {
 	glDeleteVertexArrays(1, &m_ID);
 }

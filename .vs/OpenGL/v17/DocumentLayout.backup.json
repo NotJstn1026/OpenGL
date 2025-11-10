@@ -3,56 +3,92 @@
   "WorkspaceRootPath": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Programm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Programm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Viewport.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Viewport.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderClass.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:ShaderClass.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Viewport.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Viewport.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderClass.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:ShaderClass.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VAO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:VAO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Programm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Programm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VBO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:VBO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Vertex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Vertex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:default.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VAO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:VAO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Viewport.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Viewport.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VAO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:VAO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderType.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:ShaderType.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Vertex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Vertex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VBO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:VBO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\IObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:IObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\EBO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:EBO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VAO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:VAO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\EBO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:EBO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\OLObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:OLObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\IObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:IObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderClass.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:ShaderClass.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\default.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:default.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderClass.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:ShaderClass.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\EBO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:EBO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 203,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,13 +106,50 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OLObject.h",
+              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\OLObject.h",
+              "RelativeDocumentMoniker": "OLObject.h",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\OLObject.h",
+              "RelativeToolTip": "OLObject.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-07T12:50:27.598Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Camera.h",
+              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Camera.h",
+              "RelativeDocumentMoniker": "Camera.h",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Camera.h*",
+              "RelativeToolTip": "Camera.h*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-10T16:15:58.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ShaderType.h",
+              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderType.h",
+              "RelativeDocumentMoniker": "ShaderType.h",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderType.h",
+              "RelativeToolTip": "ShaderType.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-06T12:41:47.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Viewport.h",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Viewport.h",
               "RelativeDocumentMoniker": "Viewport.h",
               "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Viewport.h",
               "RelativeToolTip": "Viewport.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAiwGUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-04T12:29:15.318Z",
               "EditorCaption": ""
@@ -84,109 +157,128 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Vertex.h",
-              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Vertex.h",
-              "RelativeDocumentMoniker": "Vertex.h",
-              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Vertex.h",
-              "RelativeToolTip": "Vertex.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "Title": "Texture.h",
+              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Texture.h",
+              "RelativeDocumentMoniker": "Texture.h",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Texture.h",
+              "RelativeToolTip": "Texture.h",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwBEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-04T12:29:15.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "VBO.h",
-              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VBO.h",
-              "RelativeDocumentMoniker": "VBO.h",
-              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VBO.h",
-              "RelativeToolTip": "VBO.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-04T12:29:15.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VAO.h",
-              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VAO.h",
-              "RelativeDocumentMoniker": "VAO.h",
-              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VAO.h",
-              "RelativeToolTip": "VAO.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAB2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-04T12:29:15.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ShaderClass.h",
-              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderClass.h",
-              "RelativeDocumentMoniker": "ShaderClass.h",
-              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderClass.h",
-              "RelativeToolTip": "ShaderClass.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-04T12:29:15.172Z",
+              "WhenOpened": "2025-11-07T12:45:08.182Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "Vertex.h",
+              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Vertex.h",
+              "RelativeDocumentMoniker": "Vertex.h",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Vertex.h",
+              "RelativeToolTip": "Vertex.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-04T12:29:15.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VBO.h",
+              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VBO.h",
+              "RelativeDocumentMoniker": "VBO.h",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VBO.h",
+              "RelativeToolTip": "VBO.h",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-04T12:29:15.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "VAO.h",
+              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VAO.h",
+              "RelativeDocumentMoniker": "VAO.h",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VAO.h",
+              "RelativeToolTip": "VAO.h",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-04T12:29:15.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ShaderClass.h",
+              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderClass.h",
+              "RelativeDocumentMoniker": "ShaderClass.h",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderClass.h",
+              "RelativeToolTip": "ShaderClass.h",
+              "ViewState": "AgIAABIAAAAAAAAAAAAkwDcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-04T12:29:15.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "IObject.h",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\IObject.h",
               "RelativeDocumentMoniker": "IObject.h",
               "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\IObject.h",
               "RelativeToolTip": "IObject.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-04T12:29:15.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T12:29:15.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "EBO.h",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\EBO.h",
               "RelativeDocumentMoniker": "EBO.h",
               "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\EBO.h",
               "RelativeToolTip": "EBO.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-04T12:29:13.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T12:29:13.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Mesh.h",
+              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Mesh.h",
+              "RelativeDocumentMoniker": "Mesh.h",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Mesh.h",
+              "RelativeToolTip": "Mesh.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-06T14:43:55.012Z"
             }
           ]
         },
         {
           "DockedHeight": 203,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Programm.cpp",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Programm.cpp",
               "RelativeDocumentMoniker": "Programm.cpp",
               "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Programm.cpp",
               "RelativeToolTip": "Programm.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-04T12:29:29.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Viewport.cpp",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Viewport.cpp",
               "RelativeDocumentMoniker": "Viewport.cpp",
-              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Viewport.cpp",
-              "RelativeToolTip": "Viewport.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Viewport.cpp*",
+              "RelativeToolTip": "Viewport.cpp*",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAIwJ0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-04T12:29:30.079Z",
               "EditorCaption": ""
@@ -194,54 +286,102 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Texture.cpp",
+              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Texture.cpp",
+              "RelativeDocumentMoniker": "Texture.cpp",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Texture.cpp",
+              "RelativeToolTip": "Texture.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-07T12:45:14.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "default.vert",
+              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\default.vert",
+              "RelativeDocumentMoniker": "default.vert",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\default.vert",
+              "RelativeToolTip": "default.vert",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-06T10:40:45.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "default.frag",
+              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\default.frag",
+              "RelativeDocumentMoniker": "default.frag",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\default.frag",
+              "RelativeToolTip": "default.frag",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-06T10:40:44.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "VBO.cpp",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VBO.cpp",
               "RelativeDocumentMoniker": "VBO.cpp",
               "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VBO.cpp",
               "RelativeToolTip": "VBO.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-04T12:29:29.984Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
+              "Title": "ShaderClass.cpp",
+              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderClass.cpp",
+              "RelativeDocumentMoniker": "ShaderClass.cpp",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderClass.cpp",
+              "RelativeToolTip": "ShaderClass.cpp",
+              "ViewState": "AgIAADcAAAAAAAAAAAD4vz4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-04T12:29:29.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "VAO.cpp",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VAO.cpp",
               "RelativeDocumentMoniker": "VAO.cpp",
               "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\VAO.cpp",
               "RelativeToolTip": "VAO.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-04T12:29:29.889Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ShaderClass.cpp",
-              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderClass.cpp",
-              "RelativeDocumentMoniker": "ShaderClass.cpp",
-              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderClass.cpp",
-              "RelativeToolTip": "ShaderClass.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-04T12:29:29.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "EBO.cpp",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\EBO.cpp",
               "RelativeDocumentMoniker": "EBO.cpp",
               "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\EBO.cpp",
               "RelativeToolTip": "EBO.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-04T12:29:29.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T12:29:29.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Mesh.cpp",
+              "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Mesh.cpp",
+              "RelativeDocumentMoniker": "Mesh.cpp",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Mesh.cpp",
+              "RelativeToolTip": "Mesh.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-06T14:44:04.519Z"
             }
           ]
         }

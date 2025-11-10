@@ -68,3 +68,50 @@ void Shader::Delete() const
 {
 	glDeleteProgram(m_ID);
 }
+
+void Shader::CheckForError(unsigned int a_shader, ShaderType a_shaderType)
+{
+	// Stores status of compilation
+	GLint hasCompiled;
+	// Character array to store error message in
+	char infoLog[1024];
+	if (a_shaderType != ShaderType::ST_PROGRAM)
+	{
+		// Check for compilation errors
+		glGetShaderiv(a_shader, GL_COMPILE_STATUS, &hasCompiled);
+		if (hasCompiled == GL_FALSE)
+		{
+			// Get the error message
+			glGetShaderInfoLog(a_shader, 1024, NULL, infoLog);
+			std::cout << "SHADER_COMPILATION_ERROR for:" << ShaderTypeToString(a_shaderType) << "\n" << infoLog << std::endl;
+		}
+	}
+	else
+	{
+		// Check for linking errors
+		glGetProgramiv(a_shader, GL_LINK_STATUS, &hasCompiled);
+		if (hasCompiled == GL_FALSE)
+		{
+			// Get the error message
+			glGetProgramInfoLog(a_shader, 1024, NULL, infoLog);
+			std::cout << "SHADER_LINKING_ERROR for:" << ShaderTypeToString(a_shaderType) << "\n" << infoLog << std::endl;
+		}
+	}
+}
+
+
+
+const char* Shader::ShaderTypeToString(ShaderType type)
+{
+	switch (type)
+	{
+	case ShaderType::ST_VERTEX:
+		return "VERTEX";
+	case ShaderType::ST_FRAGMENT:
+		return "FRAGMENT";
+	case ShaderType::ST_PROGRAM:
+		return "PROGRAM";
+	default:
+		return "UNKNOWN";
+	}
+}
