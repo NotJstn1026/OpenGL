@@ -137,9 +137,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="EBO.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Programm.cpp" />
     <ClCompile Include="ShaderClass.cpp" />
     <ClCompile Include="stb.cpp" />
@@ -152,7 +152,6 @@
     <ClInclude Include="Camera.h" />
     <ClInclude Include="EBO.h" />
     <ClInclude Include="IObject.h" />
-    <ClInclude Include="Mesh.h" />
     <ClInclude Include="OLObject.h" />
     <ClInclude Include="ShaderClass.h" />
     <ClInclude Include="ShaderType.h" />

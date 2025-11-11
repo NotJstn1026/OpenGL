@@ -6,7 +6,7 @@
 #include <stb/std_image.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
-#include <glm/gtc/matrix_transform.hpp>
+//#include <glm/gtc/matrix_transform.hpp>
 
 #include "ShaderClass.h"
 #include "VAO.h"
@@ -14,6 +14,7 @@
 #include "EBO.h"
 #include "IObject.h"
 #include "Texture.h"
+#include "Camera.h"
 
 class Viewport : public IObject {
 public:
@@ -74,31 +75,93 @@ private:
 
 	GLFWwindow* m_window = nullptr;
 
+
+
+	Camera* m_camera = nullptr;
+
+	//Needs to be in a object
 	Shader* m_shaderProgramm = nullptr;
 	VAO* m_vao = nullptr;
 	VBO* m_vbo = nullptr;
 	EBO* m_ebo = nullptr;
 
 
-	//Needs to be in a object
-	GLuint m_uniScaleID = {};
+	Shader* m_lightShader = nullptr;
+	VAO* m_lightVAO = nullptr;
+	VBO* m_lightVBO = nullptr;
+	EBO* m_lightEBO = nullptr;
+
 	Texture* m_texture = nullptr;
+
 	std::vector<Vertex> m_vertices =
 	{
-		{ glm::vec3{-0.5f, 0.0f,  0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{0.0f,0.0f} },
-		{ glm::vec3{-0.5f, 0.0f, -0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{5.0f, 0.0f} },
-		{ glm::vec3{ 0.5f, 0.0f, -0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{0.0f,0.0} },
-		{ glm::vec3{ 0.5f, 0.0f,  0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{5.0f,0.0} },
-		{ glm::vec3{ 0.0f, 0.8f,  0.0f}, glm::vec3{0.92f, 0.86f, 0.76f}, glm::vec2{2.5f, 5.0f} }
+		// POSITION                     // COLOR                       // TexCoord          // NORMAL
+		// Bottom side
+		{ glm::vec3{-0.5f, 0.0f,  0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, -1.0f, 0.0f} },
+		{ glm::vec3{-0.5f, 0.0f, -0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{0.0f, 5.0f}, glm::vec3{0.0f, -1.0f, 0.0f} },
+		{ glm::vec3{ 0.5f, 0.0f, -0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{5.0f, 5.0f}, glm::vec3{0.0f, -1.0f, 0.0f} },
+		{ glm::vec3{ 0.5f, 0.0f,  0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{5.0f, 0.0f}, glm::vec3{0.0f, -1.0f, 0.0f} },
+
+		// Left Side
+		{ glm::vec3{-0.5f, 0.0f,  0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{0.0f, 0.0f}, glm::vec3{-0.8f, 0.5f,  0.0f} },
+		{ glm::vec3{-0.5f, 0.0f, -0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{5.0f, 0.0f}, glm::vec3{-0.8f, 0.5f,  0.0f} },
+		{ glm::vec3{ 0.0f, 0.8f,  0.0f}, glm::vec3{0.92f, 0.86f, 0.76f}, glm::vec2{2.5f, 5.0f}, glm::vec3{-0.8f, 0.5f,  0.0f} },
+
+		// Non-facing side
+		{ glm::vec3{-0.5f, 0.0f, -0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{5.0f, 0.0f}, glm::vec3{ 0.0f, 0.5f, -0.8f} },
+		{ glm::vec3{ 0.5f, 0.0f, -0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{0.0f, 0.0f}, glm::vec3{ 0.0f, 0.5f, -0.8f} },
+		{ glm::vec3{ 0.0f, 0.8f,  0.0f}, glm::vec3{0.92f, 0.86f, 0.76f}, glm::vec2{2.5f, 5.0f}, glm::vec3{ 0.0f, 0.5f, -0.8f} },
+
+		// Right side
+		{ glm::vec3{ 0.5f, 0.0f, -0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{0.0f, 0.0f}, glm::vec3{ 0.8f, 0.5f,  0.0f} },
+		{ glm::vec3{ 0.5f, 0.0f,  0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{5.0f, 0.0f}, glm::vec3{ 0.8f, 0.5f,  0.0f} },
+		{ glm::vec3{ 0.0f, 0.8f,  0.0f}, glm::vec3{0.92f, 0.86f, 0.76f}, glm::vec2{2.5f, 5.0f}, glm::vec3{ 0.8f, 0.5f,  0.0f} },
+
+		// Facing side
+		{ glm::vec3{ 0.5f, 0.0f,  0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{5.0f, 0.0f}, glm::vec3{ 0.0f, 0.5f,  0.8f} },
+		{ glm::vec3{-0.5f, 0.0f,  0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{0.0f, 0.0f}, glm::vec3{ 0.0f, 0.5f,  0.8f} },
+		{ glm::vec3{ 0.0f, 0.8f,  0.0f}, glm::vec3{0.92f, 0.86f, 0.76f}, glm::vec2{2.5f, 5.0f}, glm::vec3{ 0.0f, 0.5f,  0.8f} }
 	};
+
 	std::vector<GLint> m_indices =
+	{
+		0, 1, 2, // Bottom side
+		0, 2, 3, // Bottom side
+		4, 6, 5, // Left side
+		7, 9, 8, // Non-facing side
+		10, 12, 11, // Right side
+		13, 15, 14 // Facing side
+	};
+
+	std::vector<Vertex> lightVertices =
+	{
+		// POSITION (verschoben um +1.0f auf der X-Achse)
+		// COLOR (default)             // TexCoord (default)    // NORMAL (default)
+		{ glm::vec3{ 0.9f, -0.1f,  0.1f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} },
+		{ glm::vec3{ 0.9f, -0.1f, -0.1f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} },
+		{ glm::vec3{ 1.1f, -0.1f, -0.1f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} },
+		{ glm::vec3{ 1.1f, -0.1f,  0.1f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} },
+		{ glm::vec3{ 0.9f,  0.1f,  0.1f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} },
+		{ glm::vec3{ 0.9f,  0.1f, -0.1f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} },
+		{ glm::vec3{ 1.1f,  0.1f, -0.1f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} },
+		{ glm::vec3{ 1.1f,  0.1f,  0.1f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} }
+	};
+
+	std::vector<GLint> lightIndices =
 	{
 		0, 1, 2,
 		0, 2, 3,
-		0, 1, 4,
-		1, 2, 4,
-		2, 3, 4,
-		3, 0, 4
+		0, 4, 7,
+		0, 7, 3,
+		3, 7, 6,
+		3, 6, 2,
+		2, 6, 5,
+		2, 5, 1,
+		1, 5, 4,
+		1, 4, 0,
+		4, 5, 6,
+		4, 6, 7
 	};
+
 };
 
