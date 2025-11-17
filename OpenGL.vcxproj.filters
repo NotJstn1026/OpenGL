@@ -27,7 +27,7 @@
     <ClCompile Include="EBO.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="ShaderClass.cpp">
+    <ClCompile Include="Shader.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="VAO.cpp">
@@ -45,6 +45,9 @@
     <ClCompile Include="Camera.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="BaseObject.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Viewport.h">
@@ -56,7 +59,7 @@
     <ClInclude Include="EBO.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="ShaderClass.h">
+    <ClInclude Include="Shader.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="VAO.h">
@@ -68,9 +71,6 @@
     <ClInclude Include="Vertex.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="ShaderType.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="Texture.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
@@ -80,5 +80,28 @@
     <ClInclude Include="Camera.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="GLObject.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseObject.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderType.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ShaderCode\default.frag">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="ShaderCode\default.vert">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="ShaderCode\light.vert">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="ShaderCode\light.frag">
+      <Filter>Ressourcendateien</Filter>
+    </None>
   </ItemGroup>
 </Project>

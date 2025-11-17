@@ -1,7 +1,7 @@
 #pragma once
 #include <glad/glad.h>
 #include <stb/std_image.h>
-#include "ShaderClass.h"
+#include "Shader.h"
 #include "OLObject.h"
 
 class Texture : public OLObject
@@ -11,12 +11,12 @@ public:
 	/// Constructor for the Texture class.
 	/// Loads an image, creates and uploads the OpenGL texture data.
 	/// </summary>
-	/// <param name="image">File path to the image.</param>
-	/// <param name="texType">The OpenGL texture type (e.g., GL_TEXTURE_2D).</param>
-	/// <param name="slot">The texture slot (e.g., GL_TEXTURE0) to activate.</param>
-	/// <param name="format">The format of the source image (e.g., GL_RGBA).</param>
-	/// <param name="pixelType">The data type of the pixel data (e.g., GL_UNSIGNED_BYTE).</param>
-	Texture(const char* image, GLenum texType, GLenum slot, GLenum format, GLenum pixelType);
+	/// <param name="a_image">File path to the image.</param>
+	/// <param name="a_texType">The OpenGL texture type (e.g., GL_TEXTURE_2D).</param>
+	/// <param name="a_slot">The texture slot (e.g., GL_TEXTURE0) to activate.</param>
+	/// <param name="a_format">The format of the source image (e.g., GL_RGBA).</param>
+	/// <param name="a_pixelType">The data type of the pixel data (e.g., GL_UNSIGNED_BYTE).</param>
+	Texture(const char* a_image, GLenum a_texType, GLuint a_slot, GLenum a_format, GLenum a_pixelType);
 
 	/// <summary>
 	/// Assigns a texture unit (e.g., 0) to a sampler uniform (e.g., "tex0") in the shader.
@@ -24,7 +24,7 @@ public:
 	/// <param name="shader">The shader program containing the uniform.</param>
 	/// <param name="uniform">The name of the sampler uniform in the shader.</param>
 	/// <param name="unit">The texture unit ID (0, 1, 2, etc.) to assign.</param>
-	void texUnit(Shader& shader, const char* uniform, GLuint unit);
+	void texUnit(Shader& a_shader, const char* a_uniform, GLuint a_unit);
 
 	/// <summary>
 	/// Binds the texture, making it active for subsequent rendering operations.
@@ -51,7 +51,7 @@ public:
 	/// Gets the OpenGL type of this texture (e.g., GL_TEXTURE_2D).
 	/// </summary>
 	/// <returns>The OpenGL texture type.</returns>
-	inline GLenum GetType() const { return m_Type; };
+	inline GLenum GetType() const { return m_type; };
 
 private:
 	/// <summary>
@@ -60,6 +60,7 @@ private:
 	const int M_COLORCHANNELS = 4;
 
 	GLuint m_ID = {};
-	GLenum m_Type;
+	GLenum m_type = {};
+	GLuint m_unit = {};
 };
 
