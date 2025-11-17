@@ -15,6 +15,8 @@
 #include "Texture.h"
 #include "Camera.h"
 #include "BaseObject.h"
+#include "LightObject.h"
+#include "Skybox.h"
 
 class Viewport : public IObject {
 public:
@@ -66,6 +68,12 @@ public:
 	inline struct GLFWwindow* GetWindow() { return m_window; }
 
 private:
+
+	/// <summary>
+	/// Sets up the vertex data for the 3D objects in the scene.
+	/// </summary>
+	void SetVertexData();
+
 	const int m_versionMajor = 4;
 	const int m_versionMinor = 6;
 
@@ -77,97 +85,23 @@ private:
 
 	Camera* m_camera = nullptr;
 
-	//Needs to be in a object
+	Skybox* m_skybox = nullptr;
+
 	BaseObject* m_pyramid = nullptr;
 	BaseObject* m_plank = nullptr;
 
 	Shader* m_lightShader = nullptr;
-	VAO* m_lightVAO = nullptr;
-	VBO* m_lightVBO = nullptr;
-	EBO* m_lightEBO = nullptr;
+	LightObject* m_lightObject = nullptr;
 
 	Texture* m_texture = nullptr;
 
-	std::vector<Vertex>* m_pyramidVertices = new std::vector<Vertex>
-	{
-		// POSITION                      // COLOR                       // TexCoord            // NORMAL
-		{ glm::vec3{-0.5f, 0.0f,  0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, -1.0f, 0.0f} },
-		{ glm::vec3{-0.5f, 0.0f, -0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{0.0f, 5.0f}, glm::vec3{0.0f, -1.0f, 0.0f} },
-		{ glm::vec3{ 0.5f, 0.0f, -0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{5.0f, 5.0f}, glm::vec3{0.0f, -1.0f, 0.0f} },
-		{ glm::vec3{ 0.5f, 0.0f,  0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{5.0f, 0.0f}, glm::vec3{0.0f, -1.0f, 0.0f} },
-
-		// Left Side
-		{ glm::vec3{-0.5f, 0.0f,  0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{0.0f, 0.0f}, glm::vec3{-0.8f, 0.5f,  0.0f} },
-		{ glm::vec3{-0.5f, 0.0f, -0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{5.0f, 0.0f}, glm::vec3{-0.8f, 0.5f,  0.0f} },
-		{ glm::vec3{ 0.0f, 0.8f,  0.0f}, glm::vec3{0.92f, 0.86f, 0.76f}, glm::vec2{2.5f, 5.0f}, glm::vec3{-0.8f, 0.5f,  0.0f} },
-
-		// Non-facing side
-		{ glm::vec3{-0.5f, 0.0f, -0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{5.0f, 0.0f}, glm::vec3{ 0.0f, 0.5f, -0.8f} },
-		{ glm::vec3{ 0.5f, 0.0f, -0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{0.0f, 0.0f}, glm::vec3{ 0.0f, 0.5f, -0.8f} },
-		{ glm::vec3{ 0.0f, 0.8f,  0.0f}, glm::vec3{0.92f, 0.86f, 0.76f}, glm::vec2{2.5f, 5.0f}, glm::vec3{ 0.0f, 0.5f, -0.8f} },
-
-		// Right side
-		{ glm::vec3{ 0.5f, 0.0f, -0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{0.0f, 0.0f}, glm::vec3{ 0.8f, 0.5f,  0.0f} },
-		{ glm::vec3{ 0.5f, 0.0f,  0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{5.0f, 0.0f}, glm::vec3{ 0.8f, 0.5f,  0.0f} },
-		{ glm::vec3{ 0.0f, 0.8f,  0.0f}, glm::vec3{0.92f, 0.86f, 0.76f}, glm::vec2{2.5f, 5.0f}, glm::vec3{ 0.8f, 0.5f,  0.0f} },
-
-		// Facing side
-		{ glm::vec3{ 0.5f, 0.0f,  0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{5.0f, 0.0f}, glm::vec3{ 0.0f, 0.5f,  0.8f} },
-		{ glm::vec3{-0.5f, 0.0f,  0.5f}, glm::vec3{0.83f, 0.70f, 0.44f}, glm::vec2{0.0f, 0.0f}, glm::vec3{ 0.0f, 0.5f,  0.8f} },
-		{ glm::vec3{ 0.0f, 0.8f,  0.0f}, glm::vec3{0.92f, 0.86f, 0.76f}, glm::vec2{2.5f, 5.0f}, glm::vec3{ 0.0f, 0.5f,  0.8f} }
-	};
-
-	std::vector<GLint>* m_pyramidIndices = new std::vector<GLint>
-	{
-		0, 1, 2, // Bottom side
-		0, 2, 3, // Bottom side
-		4, 6, 5, // Left side
-		7, 9, 8, // Non-facing side
-		10, 12, 11, // Right side
-		13, 15, 14 // Facing side
-	};
-
-	std::vector<Vertex>* m_floorVertices = new std::vector<Vertex>
-	{
-		// COLOR                       // TexCoord            // NORMAL
-		{ glm::vec3{ 0.5f, 0.0f,  1.0f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 1.0f, 0.0f} },
-		{ glm::vec3{ 0.5f, 0.0f, -1.0f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 1.0f}, glm::vec3{0.0f, 1.0f, 0.0f} },
-		{ glm::vec3{ 2.5f, 0.0f, -1.0f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{1.0f, 1.0f}, glm::vec3{0.0f, 1.0f, 0.0f} },
-		{ glm::vec3{ 2.5f, 0.0f,  1.0f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{1.0f, 0.0f}, glm::vec3{0.0f, 1.0f, 0.0f} }
-	};
-
-	std::vector<GLint>* m_floorIndices = new std::vector<GLint>
-	{
-		0, 1, 2,
-		0, 2, 3
-	};
-
-	std::vector<Vertex>* lightVertices = new std::vector<Vertex>
-	{
-		{ glm::vec3{ -0.1f, -0.1f,  0.1f,}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} },
-		{ glm::vec3{-0.1f, -0.1f, -0.1f,}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} },
-		{ glm::vec3{ 0.1f, -0.1f, -0.1f,}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} },
-		{ glm::vec3{ 0.1f, -0.1f,  0.1f,}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} },
-		{ glm::vec3{-0.1f,  0.1f,  0.1f,}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} },
-		{ glm::vec3{-0.1f,  0.1f, -0.1f,}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} },
-		{ glm::vec3{ 0.1f,  0.1f, -0.1f,}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} },
-		{ glm::vec3{ 0.1f,  0.1f,  0.1f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec2{0.0f, 0.0f}, glm::vec3{0.0f, 0.0f, 0.0f} }
-	};
-
-	std::vector<GLint>* lightIndices = new std::vector<GLint>
-	{
-		0, 1, 2,
-		0, 2, 3,
-		0, 4, 7,
-		0, 7, 3,
-		3, 7, 6,
-		3, 6, 2,
-		2, 6, 5,
-		2, 5, 1,
-		1, 5, 4,
-		1, 4, 0,
-		4, 5, 6,
-		4, 6, 7
-	};
+	std::vector<Vertex>* m_pyramidVertices = nullptr;
+	std::vector<GLint>* m_pyramidIndices = nullptr;
+	std::vector<Vertex>* m_floorVertices = nullptr;
+	std::vector<GLint>* m_floorIndices = nullptr;
+	std::vector<Vertex>* m_lightVertices = nullptr;
+	std::vector<GLint>* m_lightIndices = nullptr;
+	std::vector<Vertex>* m_skyboxVertices = nullptr;
+	std::vector<GLint>* m_skyboxIndices = nullptr;
 
 };

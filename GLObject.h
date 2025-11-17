@@ -8,6 +8,8 @@
 #include "Texture.h"
 #include "Camera.h"
 
+class LightObject;
+
 class GLObject :
 	public IObject
 {
@@ -26,13 +28,15 @@ public:
 		m_shaderProgram = new Shader(a_vertexPath.c_str(), a_fragmentPath.c_str());
 	};
 
-	GLObject(std::vector<Vertex>* a_vertecies, std::vector<GLint>* a_indices, Camera* a_camera, std::string a_vertexPath, std::string a_fragmentPath, std::string a_texturePath) : m_vertecies(a_vertecies), m_indices(a_indices), m_camera(a_camera)
+	GLObject(std::vector<Vertex>* a_vertecies, std::vector<GLint>* a_indices, Camera* a_camera, std::string a_vertexPath, std::string a_fragmentPath, std::string a_texturePath)
+		: m_vertecies(a_vertecies), m_indices(a_indices), m_camera(a_camera)
 	{
 		m_shaderProgram = new Shader(a_vertexPath.c_str(), a_fragmentPath.c_str());
 		m_texturePath = new std::string(a_texturePath);
 	};
 
-	GLObject(std::vector<Vertex>* a_vertecies, std::vector<GLint>* a_indices, Camera* a_camera, std::string a_vertexPath, std::string a_fragmentPath, std::string a_texturePath, std::string a_specularTexPath) : m_vertecies(a_vertecies), m_indices(a_indices), m_camera(a_camera)
+	GLObject(std::vector<Vertex>* a_vertecies, std::vector<GLint>* a_indices, Camera* a_camera, std::string a_vertexPath, std::string a_fragmentPath, std::string a_texturePath, std::string a_specularTexPath)
+		: m_vertecies(a_vertecies), m_indices(a_indices), m_camera(a_camera)
 	{
 		m_shaderProgram = new Shader(a_vertexPath.c_str(), a_fragmentPath.c_str());
 		m_texturePath = new std::string(a_texturePath);
@@ -52,6 +56,8 @@ public:
 	void SetTexture(std::string* a_texturePath) { m_texturePath = a_texturePath; }
 	void SetSpecularMapTexture(std::string* a_specularMapPath) { m_specularMapPath = a_specularMapPath; }
 
+	Shader* GetShaderProgramm() { return m_shaderProgram; };
+
 protected:
 	Shader* m_shaderProgram = nullptr;
 	VAO* m_VAO = nullptr;
@@ -60,6 +66,7 @@ protected:
 	Texture* m_texture = nullptr;
 	Texture* m_specularMapTexture = nullptr;
 	Camera* m_camera = nullptr;
+	
 
 	std::vector<Vertex>* m_vertecies;
 	std::vector<GLint>* m_indices;

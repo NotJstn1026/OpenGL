@@ -41,8 +41,24 @@ public:
 	/// <param name="window">Window to get inputs from.</param>
 	void Inputs(GLFWwindow* window);
 
-
+	/// <summary>
+	/// Gets the current position of the camera.
+	/// </summary>
+	/// <returns>A vec3 representing the camera position.</returns>
 	glm::vec3 GetPosition() const { return m_position; }
+
+	/// <summary>
+	/// Gets the current view matrix of the camera.
+	/// </summary>
+	/// <returns>A mat4 representing the view matrix.</returns>
+	glm::mat4 GetViewMatrix() const { return m_view; }
+
+	/// <summary>
+	/// Gets the current projection matrix of the camera.
+	/// </summary>
+	/// <returns>A mat4 representing the projection matrix.</returns>
+	glm::mat4 GetProjectionMatrix() const { return m_projection; }
+
 private:
 
 	const float M_MAX_PITCH = 89.0f;
@@ -56,6 +72,8 @@ private:
 	glm::vec3 m_orientation = glm::vec3(0.0f, 0.0f, -1.0f);
 	glm::vec3 m_up = glm::vec3(0.0f, 1.0f, 0.0f);
 
+	glm::mat4 m_view = glm::mat4(1.0f);
+	glm::mat4 m_projection = glm::mat4(1.0f);
 	glm::mat4 m_cameraMatrix = glm::mat4(1.0f);
 
 	int m_width = {};

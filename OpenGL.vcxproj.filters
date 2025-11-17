@@ -48,6 +48,12 @@
     <ClCompile Include="BaseObject.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="LightObject.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Skybox.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Viewport.h">
@@ -89,6 +95,15 @@
     <ClInclude Include="ShaderType.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="LightType.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="LightObject.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Skybox.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ShaderCode\default.frag">
@@ -101,6 +116,12 @@
       <Filter>Ressourcendateien</Filter>
     </None>
     <None Include="ShaderCode\light.frag">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="ShaderCode\skybox.frag">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="ShaderCode\skybox.vert">
       <Filter>Ressourcendateien</Filter>
     </None>
   </ItemGroup>

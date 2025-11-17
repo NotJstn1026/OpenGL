@@ -1,5 +1,4 @@
-﻿  BaseObject.cpp
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+﻿  Skybox.cpp
   OpenGL.vcxproj -> D:\SAE_Uni\3Semester\Rendering\OpenGL\x64\Debug\OpenGL.exe
   Der Befehl "pwsh.exe" ist entweder falsch geschrieben oder
   konnte nicht gefunden werden.

@@ -8,16 +8,14 @@ void Camera::Matrix(Shader& shader, const char* uniform)
 
 void Camera::UpdateMatrix()
 {
-	glm::mat4 view = glm::mat4(1.0f);
-	glm::mat4 projection = glm::mat4(1.0f);
 
 	// Makes camera look in the right direction from the right position
-	view = glm::lookAt(m_position, m_position + m_orientation, m_up);
+	m_view = glm::lookAt(m_position, m_position + m_orientation, m_up);
 	// Adds perspective to the scene
-	projection = glm::perspective(glm::radians(M_FOVDEG), (float)m_width / m_height, M_NEARPLANE, M_FARPLANE);
+	m_projection = glm::perspective(glm::radians(M_FOVDEG), (float)m_width / m_height, M_NEARPLANE, M_FARPLANE);
 
 	// Sets new camera matrix
-	m_cameraMatrix = projection * view;
+	m_cameraMatrix = m_projection * m_view;
 }
 
 void Camera::Inputs(GLFWwindow* window)
