@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\BaseObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:BaseObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\LightObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:LightObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Skybox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Skybox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Skybox.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Skybox.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\GLObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:GLObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\OLObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:OLObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\LightObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -31,14 +51,6 @@
       "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Viewport.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\GLObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:GLObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Skybox.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Skybox.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Viewport.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Viewport.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -57,18 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\OLObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:OLObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\LightObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:LightObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\BaseObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{94DF29A2-1552-4276-B228-BE0900611753}|OpenGL.vcxproj|solutionrelative:BaseObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\light.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -134,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 203,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -142,59 +142,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Skybox.h",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Skybox.h",
               "RelativeDocumentMoniker": "Skybox.h",
               "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Skybox.h",
               "RelativeToolTip": "Skybox.h",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAE4AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-17T20:15:28.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T20:15:28.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 1,
               "Title": "LightObject.h",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\LightObject.h",
               "RelativeDocumentMoniker": "LightObject.h",
               "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\LightObject.h",
               "RelativeToolTip": "LightObject.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA4AAACPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-17T14:48:20.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T14:48:20.846Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 0,
               "Title": "BaseObject.h",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\BaseObject.h",
               "RelativeDocumentMoniker": "BaseObject.h",
-              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\BaseObject.h",
-              "RelativeToolTip": "BaseObject.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAzAAAAAAAAAA==",
+              "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\BaseObject.h*",
+              "RelativeToolTip": "BaseObject.h*",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAABwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-16T23:23:37.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "GLObject.h",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\GLObject.h",
               "RelativeDocumentMoniker": "GLObject.h",
               "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\GLObject.h",
               "RelativeToolTip": "GLObject.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-16T23:07:28.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T23:07:28.842Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
               "Title": "OLObject.h",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\OLObject.h",
               "RelativeDocumentMoniker": "OLObject.h",
@@ -202,12 +199,11 @@
               "RelativeToolTip": "OLObject.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-07T12:50:27.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T12:50:27.598Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Camera.h",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Camera.h",
               "RelativeDocumentMoniker": "Camera.h",
@@ -215,12 +211,11 @@
               "RelativeToolTip": "Camera.h",
               "ViewState": "AgIAADQAAAAAAAAAAAAAADoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-10T16:15:58.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T16:15:58.675Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Viewport.h",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Viewport.h",
               "RelativeDocumentMoniker": "Viewport.h",
@@ -228,8 +223,7 @@
               "RelativeToolTip": "Viewport.h",
               "ViewState": "AgIAAEsAAAAAAAAAAAAAAFcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-04T12:29:15.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T12:29:15.318Z"
             },
             {
               "$type": "Document",
@@ -311,7 +305,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Viewport.cpp",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Viewport.cpp",
               "RelativeDocumentMoniker": "Viewport.cpp",
@@ -320,12 +314,11 @@
               "ViewState": "AgIAAC8AAAAAAAAAAAAuwDcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-04T12:29:30.079Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "skybox.vert",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderCode\\skybox.vert",
               "RelativeDocumentMoniker": "ShaderCode\\skybox.vert",
@@ -333,12 +326,11 @@
               "RelativeToolTip": "ShaderCode\\skybox.vert",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-17T21:14:18.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T21:14:18.335Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "skybox.frag",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderCode\\skybox.frag",
               "RelativeDocumentMoniker": "ShaderCode\\skybox.frag",
@@ -346,25 +338,24 @@
               "RelativeToolTip": "ShaderCode\\skybox.frag",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-17T21:14:18.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T21:14:18.059Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Skybox.cpp",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Skybox.cpp",
               "RelativeDocumentMoniker": "Skybox.cpp",
               "ToolTip": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Skybox.cpp",
               "RelativeToolTip": "Skybox.cpp",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAFgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAFgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-17T20:16:49.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "LightObject.cpp",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\LightObject.cpp",
               "RelativeDocumentMoniker": "LightObject.cpp",
@@ -372,8 +363,7 @@
               "RelativeToolTip": "LightObject.cpp",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-17T14:50:54.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T14:50:54.513Z"
             },
             {
               "$type": "Document",
@@ -385,12 +375,11 @@
               "RelativeToolTip": "LightType.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-17T14:47:23.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T14:47:23.282Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "default.vert",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderCode\\default.vert",
               "RelativeDocumentMoniker": "ShaderCode\\default.vert",
@@ -398,12 +387,11 @@
               "RelativeToolTip": "ShaderCode\\default.vert",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-16T23:58:17.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T23:58:17.84Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "default.frag",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\ShaderCode\\default.frag",
               "RelativeDocumentMoniker": "ShaderCode\\default.frag",
@@ -411,8 +399,7 @@
               "RelativeToolTip": "ShaderCode\\default.frag",
               "ViewState": "AgIAADkAAAAAAAAAAAAAACAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-16T23:29:12.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T23:29:12.84Z"
             },
             {
               "$type": "Document",
@@ -424,12 +411,11 @@
               "RelativeToolTip": "light.vert",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-11T15:44:39.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-11T15:44:39.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Shader.cpp",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Shader.cpp",
               "RelativeDocumentMoniker": "Shader.cpp",
@@ -437,8 +423,7 @@
               "RelativeToolTip": "Shader.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAtwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-16T23:10:42.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T23:10:42.43Z"
             },
             {
               "$type": "Document",
@@ -450,12 +435,11 @@
               "RelativeToolTip": "light.frag",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-11T15:44:39.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-11T15:44:39.471Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "BaseObject.cpp",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\BaseObject.cpp",
               "RelativeDocumentMoniker": "BaseObject.cpp",
@@ -463,12 +447,11 @@
               "RelativeToolTip": "BaseObject.cpp",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAAAsAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-16T23:24:55.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T23:24:55.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Camera.cpp",
               "DocumentMoniker": "D:\\SAE_Uni\\3Semester\\Rendering\\OpenGL\\Camera.cpp",
               "RelativeDocumentMoniker": "Camera.cpp",
@@ -476,8 +459,7 @@
               "RelativeToolTip": "Camera.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-10T18:47:30.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T18:47:30.373Z"
             },
             {
               "$type": "Document",
@@ -489,8 +471,7 @@
               "RelativeToolTip": "Programm.cpp",
               "ViewState": "AgIAAAEAAAAAAAAAAAAuwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-04T12:29:29.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T12:29:29.706Z"
             },
             {
               "$type": "Document",
